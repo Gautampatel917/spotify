@@ -1,0 +1,67 @@
+/* utility: work with any elements */
+.border {
+    border: solid blue;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.invert {
+    filter: invert(1);
+    /* convert image black to white */
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-gray {
+    background-color: hsl(0, 0%, 7%);
+}
+
+.curve {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 3px;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+/* You can adjust the colors to fit your dark web site's theme. 
+If you want to change the scrollbar color only for dark mode, you can use the color-scheme property at the root element, like this: */
+
+:root {
+    color-scheme: dark;
+}
+
+/*Then you can use CSS variables to define the scrollbar colors based on the color-scheme. For example: */
+
+:root {
+    --scrollbar-background: #0d0d0d;
+    --scrollbar-foreground: #444;
+    scrollbar-color: #0c0c0c #222;
+}
+
+::-webkit-scrollbar {
+    background-color: var(--scrollbar-background);
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-foreground);
+}
+
+/*fire fox */
